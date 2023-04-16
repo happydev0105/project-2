@@ -1,11 +1,18 @@
 import React, { useState, useEffect } from "react";
+
 import { FaRegTrashAlt } from "react-icons/fa";
+
 import { useSession } from "../contexts/SessionContext";
+
 import HomeFilter from "../components/Account/SavedHome/HomeFilter";
+
 import SavedHomeItem from "../components/Account/SavedHome/SavedHomeItem";
 import DeleteSavedHomeModal from "../components/Account/SavedHome/DeleteSavedHomeModal";
+
+
 import Pagenation from "../components/Common/Pagenation";
 import { detailEndpoint } from "../services/DetailService";
+
 
 function SavedHomes() {
   const searchList = [
